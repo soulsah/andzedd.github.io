@@ -1,3 +1,10 @@
+:root{
+    --mainColor: #8A8F92;
+    --mainDarker: #4C566A;
+    --secondaryColor: #ECEFF4;
+    --secondaryBrighter: #fff;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -18,12 +25,12 @@ h3{
 }
 
 p{
-    color: #8f8f8f;
+    color: var(--mainColor);
 }
 
 #title {
-    background-color: #8a8f92;
-    color: #ECEFF4;
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
 }
 
 .titulo{
@@ -54,12 +61,12 @@ p{
 .nav-link{
     font-size: 1.2rem;
     font-weight: 400;
-    color: #ECEFF4 !important;
+    color: var(--secondaryColor) !important;
     transition: 0.15s;
 }
 
 .nav-link:hover{
-    color: #4C566A !important;
+    color: var(--mainDarker) !important;
 }
 
 /* Download Buttons */
@@ -79,7 +86,7 @@ p{
 /* Features */
 #features{
     position: relative;
-    background-color: white;
+    background-color: var(--secondaryBrighter);
 }
 
 .feat-icon{
@@ -88,18 +95,18 @@ p{
 }
 
 .feat-icon:hover{
-    color: #c1c1c1;
+    color: var(--mainColor);
 }
 
 /* Testimonials */
 #testimonials{
     text-align: center;
-    background-color: #8a8f92;
-    color: #ECEFF4;
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
 }
 
 #press {
-    background-color: #8a8f92;
+    background-color: var(--mainColor);
     text-align: center;
     padding-bottom: 3%;
 }
@@ -122,15 +129,15 @@ p{
 /* CTA */
 #cta{
     text-align: center;
-    background-color: #8a8f92;
-    color: #ECEFF4;
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
     padding: 7% 15%;
 }
 
 /* Footer */
 #footer{
     text-align: center;
-    background-color: #fff;
+    background-color: var(--secondaryBrighter);
     padding: 7% 15%;
 }
 
