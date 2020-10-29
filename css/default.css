@@ -23,6 +23,11 @@
 
 }
 
+@font-face {
+    font-family: blender_probook;
+    src: url("../fonts/Blender-Pro-Book.otf");
+}
+
 html, body{
     padding: 0;
     margin: 0;
@@ -59,6 +64,31 @@ h3{font-size: 28px;}
 h4{font-size: 24px;}
 h5{font-size: 20px;}
 h6{font-size: 16px;}
+
+.nav-primary ul {
+    display: inline-block;
+}
+
+.primary-menu li{
+    display: inline;
+    padding: 5px;
+}
+
+.primary-menu li a{
+    margin-top: 5px;
+    text-align: center;
+    display: inline-block;
+    line-height: 3em;
+    width:150px;
+    padding: 0 5px 0 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid var(--mainText);
+    color: var(--mainText);
+    font-size: .65em;
+    letter-spacing: .6em;
+}
+
 
 .s1{
     background-color: var(--mainColor);
@@ -192,7 +222,7 @@ h6{font-size: 16px;}
 }
 
 .theme-dot:hover{
-    border-width: 5px;
+    border-color: #9cc0c7;
 }
 
 #light-mode{
@@ -230,13 +260,14 @@ h6{font-size: 16px;}
 
 .post-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 250px);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 270px);
+    gap: 8px;
     justify-content: center;
     padding-bottom: 50px;
 }
 
 .post{
+    height: 300px;
     border: 1px solid var(--borderColor);
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -262,11 +293,13 @@ h6{font-size: 16px;}
 .post-title{
     color: var(--mainText);
     margin: 0;
+    text-align: center;
 }
 
 .post-intro{
     color: var(--postColor);
     font-size:14px;
+    text-align: center;
 }
 
 .icones img{

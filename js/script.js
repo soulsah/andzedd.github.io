@@ -26,3 +26,32 @@ function setTheme(mode){
 
     localStorage.setItem('theme', mode);
 }
+
+let interval;
+
+const shuffle = document.querySelectorAll(".shuffle");
+
+const randomInt = max => Math.floor(Math.random() * max)
+const randomFromArray = array => array[randomInt(array.length)]
+
+const scrambleText = text => {
+  const chars = '*?><[]&@#)(.%$-_:/;?!'.split('')
+  return text
+    .split('')
+    .map(x => randomInt(3) > 1 ? randomFromArray(chars) : x)
+    .join('')
+}
+
+shuffle.forEach(element => {
+    const originalText = element.innerText;
+    element.addEventListener('mouseover', () => {
+        interval = setInterval(() =>
+        element.innerText = scrambleText(originalText)
+        , 100)
+      })
+
+    element.addEventListener('mouseout', () => {
+        clearInterval(interval)
+        element.innerText = originalText
+    })
+});
