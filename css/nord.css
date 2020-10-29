@@ -1,23 +1,27 @@
 :root{
-    --mainColor: #2E3440;
-    --secondaryColor: #4C566A;
+    --mainColor: #01012b;
+    --secondaryColor: #000031;
 
     --borderColor: #5E81AC;
 
-    --mainText: #D8DEE9;
-    --secondaryText: #E5E9F0;
+    --mainText: #d1f7ff;
+    --secondaryText: #d6f1f7;
 
-    --themeDotBorder: #88C0D0;
+    --themeDotBorder: #02FFFC;
 
     --previewBg: rgb(129, 161, 193, 0.8);
     --previewShadow: rgb(94, 129, 172);
 
-    --postBgColor: #5E81AC;
+    --postBgColor: #01012b;
     --postColor:#E5E9F0;
-    --postPreviewColor:#5E81AC;
+    --postPreviewColor:#01012b;
     --buttonColor: #5E81AC;
 
     --dot-1: #5E81AC;
     --dot-2: #88C0D0;
     --dot-3: #8FBCBB;
-} 
+}
+
+.theme-dot:hover{
+    border-color: #005678;
+}
