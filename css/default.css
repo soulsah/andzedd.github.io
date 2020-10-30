@@ -266,8 +266,25 @@ h6{font-size: 16px;}
     padding-bottom: 50px;
 }
 
+.post-wrapper-project{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 8px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
 .post{
     height: 300px;
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    background-color: var(--postBgColor);
+}
+
+.post-project{
+    height: 220px;
     border: 1px solid var(--borderColor);
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -305,7 +322,6 @@ h6{font-size: 16px;}
 .icones img{
     width: 30px;
     height: 30px;
-    margin-top: 10px;
     margin-right: 10px;
 }
 
